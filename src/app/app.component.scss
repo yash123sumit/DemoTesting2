@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --lg-font: 'kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+}
+.navbar-header
+{
+    background: rgb(7, 110, 107);
+    box-shadow: 0  3px 9px 3px  rgba(0, 0, 0, 0.1);
+}
+.navbar-user
+{
+    margin-right: 5px;
+    margin-bottom: 1px;
+    background-color: rgb(80, 212, 168);
+    border-color: navajowhite;
+    height: 30px;
+}
+.carousel-item img
+{
+    width: 100%;
+    height: 50vh;
+}
+.middle-header
+{
+    background: rgb(7, 110, 107);
+}
+
+.footer-footer
+{
+    background: rgb(7, 110, 107);
+}
+.footer-link .link
+{
+    color: rgb(80, 212, 168);
+}
+.footer-box
+{
+    padding: 20px;
+}
+.footer-contact .ri 
+{
+    margin-right: 8px;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    text-align: bottom;
+    padding-top: 2px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #359cae, #176282);
+}
+.footer-subscribe .form-control
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0px;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-subscribe .btn-primary
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0px;
+    margin-top: 8px;
+    background-image: linear-gradient(to right, #359cae, #176282);
+}
+.footer-social img
+{
+    width: 60px;
+    transition: 0.5s;
+}
+.footer-social a:hover img
+{
+    transform: translateY(10px);
+}
+.card a:hover img
+{
+    transform: scale(1.05);
+}
