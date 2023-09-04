@@ -1,0 +1,43 @@
+
+<main *ngIf="galleryInfo">
+    <div class="text-center">
+        <a [routerLink]="['/brand', galleryInfo[0].Id]" class="btn btn-lg btn-info">Back to Brand</a>
+    </div>
+
+    <body>
+        <div class="gallery">
+            <div class="image-box active">
+                <img src="{{galleryInfo[0].path1}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path2}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path3}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path4}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path5}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path6}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path7}}" alt="">
+            </div>
+
+            <div class="image-box">
+                <img src="{{galleryInfo[0].path8}}" alt="">
+            </div>
+
+        </div>
+    </body>
+</main>

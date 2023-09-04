@@ -1,0 +1,35 @@
+form {
+    width: 500px;
+    justify-content: center;
+    margin: 3%;
+    height: auto;
+
+
+}
+.container{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-image: url(/src/assets/pexels-pixabay-94272.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+  }
+  .form-label {
+    margin-top: .33em;
+    display: block;
+    color: white;
+    font-weight: bold;
+   }
+   .form{
+    // background-image: linear-gradient(
+    //     to bottom right,
+    //     rgb(0, 0, 0),
+    //     rgb(55, 38, 73)
+    //   );
+    background-color: transparent;
+      
+   }
