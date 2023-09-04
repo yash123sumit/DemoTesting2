@@ -1,0 +1,153 @@
+i want java code to run and execute these commands to create angular application.
+commands are users inputs, for example user enter npm install -g @angular/cli, ng new calculator, cd calculator, ng g c calculator etc.. These commands are execute one by one 
+and will generate full fledged angular application in a local directory.provide working and efficient code.
+
+
+ng generate component calculator --project=D:\Practice\calculator
+
+
+\n- app\n  - calculator\n    - components\n      - calculator.component.html\n      - calculator.component.scss\n      - calculator.component.spec.ts\n      - calculator.component.ts\n    - models\n      - operation.model.ts\n    - services\n      - calculator.service.spec.ts\n      - calculator.service.ts\n    - calculator.module.ts\n  - shared\n    - components\n      - button\n        - button.component.html\n        - button.component.scss\n        - button.component.spec.ts\n        - button.component.ts\n    - models\n      - button.model.ts\n    - services\n      - input.service.spec.ts\n      - input.service.ts\n    - shared.module.ts\n  - app.component.html\n  - app.component.scss\n  - app.component.spec.ts\n  - app.component.ts\n  - app.module.ts\n  - app-routing.module.ts\n- assets\n  - css\n    - styles.css\n- environments\n  - environment.prod.ts\n  - environment.ts\n- index.html\n- main.ts\n- polyfills.ts\n- styles.scss\n- test.ts\n 
+ give the regex pattern above string in java to create folder structure like this
+project_folder
+  ├── app
+  │   ├── calculator
+  │   │   ├── components
+  │   │   │   ├── calculator.component.html
+  │   │   │   ├── calculator.component.scss
+  │   │   │   ├── calculator.component.spec.ts
+  │   │   │   └── calculator.component.ts
+  │   │   ├── models
+  │   │   │   └── operation.model.ts
+  │   │   └── services
+  │   │       ├── calculator.service.spec.ts
+  │   │       └── calculator.service.ts
+  │   └── shared
+  │       ├── components
+  │       │   └── button
+  │       │       ├── button.component.html
+  │       │       ├── button.component.scss
+  │       │       ├── button.component.spec.ts
+  │       │       └── button.component.ts
+  │       ├── models
+  │       │   └── button.model.ts
+  │       └── services
+  │           ├── input.service.spec.ts
+  │           └── input.service.ts
+  ├── app.component.html
+  ├── app.component.scss
+  ├── app.component.spec.ts
+  ├── app.component.ts
+  ├── app.module.ts
+  ├── app-routing.module.ts
+  ├── assets
+  │   └── css
+  │       └── styles.css
+  ├── environments
+  │   ├── environment.prod.ts
+  │   └── environment.ts
+  ├── index.html
+  ├── main.ts
+  ├── polyfills.ts
+  ├── styles.scss
+  └── test.ts
+
+files are end with .ts, .scss and html
+
+clearly understand that what i am saying, for example project_folder is parent folder. app, assest, environments folders are child folder of project_folder and also
+app.component.html, app.component.scss, app.component.spec.ts, app.component.ts, app.module.ts, app-routing.module.ts, index.html, main.ts, polyfills.ts, styles.scss,test.ts are also child 
+files of project_folder. Again those folders containing child folders and files. i want you to provide java code to create with the correct nesting of directories and files.
+
+D:\AngularFolderStructure
+
+
+
+i have this response  n\n- calculator\n  - app\n    - components\n      - calculator\n        - calculator.component.ts\n        - calculator.component.html\n        - calculator.component.css\n        - calculator.component.spec.ts\n    - services\n      - calculator.service.ts\n      - calculator.service.spec.ts\n    - models\n      - calculation.ts\n    - utils\n      - calculator.utils.ts\n  - assets\n    - css\n      - styles.css\n    - images\n  - environments\n    - environment.ts\n    - environment.prod.ts\n  - index.html\n  - main.ts\n  - app.module.ts\n  - app.component.ts\n  - app.component.html\n  - app.component.css\n  - app.component.spec.ts\n  - tsconfig.json\n  - package.json\n\n use this response to create hierarchy like this 
+- src
+  - app
+    - calculator
+      - calculator.component.ts
+      - calculator.component.html
+      - calculator.component.css
+      - calculator.component.spec.ts
+      - calculator.service.ts
+      - calculator.service.spec.ts
+      - models
+        - calculation.ts
+      - utils
+        - calculator.utils.ts
+    - assets
+      - css
+        - styles.css
+      - images
+    - environments
+      - environment.ts
+      - environment.prod.ts
+    - app.module.ts
+    - app.component.ts
+    - app.component.html
+    - app.component.css
+    - app.component.spec.ts
+  - index.html
+  - main.ts
+- tsconfig.json
+- package.json
+
+
+Exception : 
+
+
+java.lang.NullPointerException: Cannot load from object array because "codeStr" is null
+	at com.openAi.format.CreateProjectStructure.codeformater(CreateProjectStructure.java:76) ~[classes/:na]
+	at com.openAi.format.ResponseFormat.getFileNameAndCode(ResponseFormat.java:65) ~[classes/:na]
+	at com.openAi.format.ResponseFormat.getCodeResponse(ResponseFormat.java:41) ~[classes/:na]
+	at com.openAi.controller.CustomBotController.chat(CustomBotController.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
