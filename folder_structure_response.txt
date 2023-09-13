@@ -1,0 +1,127 @@
+<structure>
+- app
+  - components
+    - calculator
+      - calculator.component.html
+      - calculator.component.scss
+      - calculator.component.ts
+      - calculator.component.spec.ts
+  - services
+    - calculator
+      - calculator.service.ts
+  - models
+    - calculator.model.ts
+  - shared
+    - header
+      - header.component.html
+      - header.component.scss
+      - header.component.ts
+      - header.component.spec.ts
+    - footer
+      - footer.component.html
+      - footer.component.scss
+      - footer.component.ts
+      - footer.component.spec.ts
+  - app.component.html
+  - app.component.scss
+  - app.component.ts
+  - app.component.spec.ts
+  - app.module.ts
+- assets
+  - images
+    - logo.png
+  - styles
+    - main.scss
+- environments
+  - environment.prod.ts
+  - environment.ts
+- index.html
+- main.ts
+- polyfills.ts
+- styles.scss
+- test.ts
+- tsconfig.app.json
+- tsconfig.spec.json
+- angular.json
+- package.json
+- README.md
+</structure>
+
+---------------------------------------------------------------------------------------------------
+
+<structure>
+  - src
+    - app
+      - components
+        - calculator
+          - calculator.component.ts
+          - calculator.component.html
+          - calculator.component.css
+      - services
+        - calculator.service.ts
+      - models
+        - calculation.model.ts
+      - app.module.ts
+      - app.component.ts
+      - app.component.html
+      - app.component.css
+    - assets
+      - images
+      - styles
+    - environments
+    - index.html
+    - main.ts
+    - styles.css
+</structure>
+
+---------------------------------------------------------------------------------------------------
+
+<structure>
+  - src/
+    - app/
+      - components/
+        - calculator/
+          - calculator.component.ts
+          - calculator.component.html
+          - calculator.component.css
+      - services/
+        - calculator.service.ts
+      - app.module.ts
+      - app.component.ts
+      - app.component.html
+      - app.component.css
+    - assets/
+      - images/
+        - logo.png
+    - styles.css
+    - index.html
+  - node_modules/
+  - angular.json
+  - tsconfig.json
+  - package.json
+</structure>
+
+---------------------------------------------------------------------------------------------------
+
+<structure>
+  - app
+    - components
+      - calculator
+        - calculator.component.html
+        - calculator.component.scss
+        - calculator.component.ts
+        - calculator.component.spec.ts
+    - services
+      - calculator.service.ts
+    - models
+      - calculation.model.ts
+  - assets
+    - images
+  - environments
+  - index.html
+  - main.ts
+  - styles.scss
+</structure>
+
+---------------------------------------------------------------------------------------------------
+
