@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home.component.scss" />
+    <title>INvehicle</title>
+  </head>
+  <body>
+    <main>
+      <div class="background-image-text">
+        <div class="carousel-caption text-start">
+          <h1 class="display-4">Welcome to INvehicle</h1>
+          <p>Your one-stop shop for all your car needs.</p>
+          
+        </div>
+      </div><br><br>
+
+      <!-- about us -->
+      <div class=" container-fluid aboutus">
+        <div class="row title">
+          <h2>About us !</h2>
+        </div>
+
+        <div class="boxnew">
+          <div class="cardimg">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png"
+              class="card-img-top"
+              alt="aboutus image"
+            />
+          </div>
+          <div class="card2">
+            <p>
+              "Welcome to INvehicle, your one-stop destination for all your automotive needs.
+               We are a family-owned and operated dealership that has been serving the community for over 25years. 
+               Our goal is to provide our customers with an exceptional experience from start to finish, 
+               whether you're looking to purchase a new or pre-owned vehicle, schedule a service appointment, 
+               or simply browse our selection of parts and accessories. We believe in treating our customers like family, 
+               and we strive to provide a welcoming and transparent environment where you can feel confident in your automotive choices. 
+               Come visit us today and see why we're the trusted choice for drivers throughout India"
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- buy new  -->
+      <div class="buy">
+        <div class="row title">
+          <h2>Why Buy from us !</h2>
+        </div><br><br>
+        <div class="box">
+          <div class="card1">
+            <img
+              src="https://www.cars24.com/js/6f751a9d48793a9685f4a1313fed19ab.svg"
+              class="card-img-top"
+              alt="Financing options"
+            />
+            <h5 class="card1-title">Easy Financing Options</h5>
+
+            <div class="pra">
+              <p>
+                Become eligible for Zero Down Payment via EMIs of up to 72
+                months and instant loans.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <img
+              src="https://www.cars24.com/js/72ee8594f9a2e0d3f78d675ff84c0333.svg"
+              class="card-img-top"
+              alt="Warranty"
+            />
+            <h5 class="card1-title">12-Month Warranty</h5>
+
+            <div class="pra">
+              <p>
+                Enjoy peace of mind with our 12-Month Warranty that is standard
+                across all cars that we sell..
+              </p>
+            </div>
+          </div>
+
+          <div class="card1">
+            <img
+              src="https://www.cars24.com/js/7f7b7d5596e5e520b606dd534be627b0.svg"
+              class="card-img-top"
+              alt="Quality checks"
+            />
+            <h5 class="card1-title">140-Quality Checks</h5>
+
+            <div class="pra">
+              <p>
+                Inspected across 140 parameters by auto-experts, our cars are
+                ready for the road.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="c" style="padding-bottom: 10px;">
+
+        <div class="row title">
+          <h2>Available Brands</h2>
+        </div><br><br>
+        <ul class="cards">
+          <li *ngFor="let bd of brandData">
+            <a [routerLink]="['/brand', bd.id]" class="card">
+              <img src="{{ bd.brandCarousel1 }}" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    class="card__thumb"
+                    src="{{ bd.brandLogo }}"
+                    alt=""
+                  />
+                  <div class="card__header-text">
+                    <h3 class="card__title">{{ bd.brandName }}</h3>
+                  </div>
+                </div>
+                <p class="card__description">
+                  {{ bd.brandLogoText }}
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <!-- <li>
+            <a href="" class="card">
+              <img src="./assets/ferr2.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    class="card__thumb"
+                    src="./assets/ferrari_logo.png"
+                    alt=""
+                  />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Ferrari</h3>
+                  </div>
+                </div>
+                <p class="card__description">Italian excellence</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="card">
+              <img src="./assets/lambo1.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    class="card__thumb"
+                    src="./assets/lamborghini_logo.png"
+                    alt=""
+                  />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Lamborghini</h3>
+                  </div>
+                </div>
+                <p class="card__description">
+                  Dream, inspire, lead, wait, last
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="" class="card">
+              <img src="./assets/jaguar_xf4.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img
+                    class="card__thumb"
+                    src="./assets/jaguar_logo.png"
+                    alt=""
+                  />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jaguar</h3>
+                  </div>
+                </div>
+                <p class="card__description">Grace…, Space… Pace.</p>
+              </div>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

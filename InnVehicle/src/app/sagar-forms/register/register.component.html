@@ -1,0 +1,206 @@
+<div class="container ml-1 mr-1" style="background-image: url(assets/pexels-pixabay-94272.jpg);">
+    
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="registerSubmitted($event)"
+      class="border p-3 rounded-3" 
+    >
+      <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-dark">
+          <span class="fs-3">Register Now</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="FirstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="FirstName"
+            formControlName="FirstName"
+          />
+          <div class="form-text text-danger" *ngIf="firstName.errors?.['required'] && (firstName.touched || firstName.dirty)">First Name is required.</div>
+          <div class="form-text text-danger" *ngIf="firstName.errors?.['minlength'] && (firstName.touched || firstName.dirty)">First Name is too short.</div>
+          <div class="form-text text-danger" *ngIf="firstName.errors?.['pattern'] && (firstName.touched || firstName.dirty)">First Name should start with Alphabet.</div>
+        </div>
+        <div class="col mb-3">
+          <label for="LastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="LastName"
+            formControlName="LastName"
+          />
+          <div class="form-text text-danger" *ngIf="lastName.errors?.['required'] && (lastName.touched || lastName.dirty)">Last Name is required.</div>
+          <div class="form-text text-danger" *ngIf="lastName.errors?.['minlength'] && (lastName.touched || lastName.dirty)">Last Name is too short.</div>
+          <div class="form-text text-danger" *ngIf="lastName.errors?.['pattern'] && (lastName.touched || lastName.dirty)">Last Name should start with Alphabet.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="Email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="Email"
+            formControlName="Email"
+          />
+          <div class="form-text text-danger" *ngIf="email.errors?.['required'] && (email.dirty || email.touched)">Email is required.</div>
+          <div class="form-text text-danger" *ngIf="email.errors?.['email'] && (email.dirty || email.touched)">Email is Invalid..</div>
+          <div class="form-text"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mb-3">
+          <label for="Age" class="form-label">Age</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Age"
+            formControlName="Age"
+          />
+          <div class="form-text text-danger" *ngIf="age.errors?.['required'] && (age.dirty || age.touched)">Age is required.</div>
+          <div class="form-text text-danger" *ngIf="age.errors?.['pattern'] && (age.touched || age.dirty)">Age is invalid.</div>
+          <div class="form-text text-danger" *ngIf="age.errors?.['min'] && (age.touched || age.dirty)">Age should be 18+.</div>
+          <div class="form-text text-danger" *ngIf="age.errors?.['max'] && (age.touched || age.dirty)">Invalid Input.</div>
+         
+        </div>
+    </div>
+        <div class="row">
+          <div class="col mb-3">
+            <label for="Mobile" class="form-label">Mobile Number</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Mobile"
+              formControlName="Mobile"
+            />
+            <div class="form-text text-danger" *ngIf="mobile.errors?.['required'] && (mobile.dirty || mobile.touched)">Mobile number is required.</div>
+            <div class="form-text text-danger" *ngIf="mobile.errors?.['pattern'] && (mobile.touched || mobile.dirty)">Mobile number is invalid.</div>
+            <div class="form-text text-danger" *ngIf="mobile.errors?.['minlength'] && (mobile.touched || mobile.dirty)">Mobile number is short.</div>
+            <div class="form-text text-danger" *ngIf="mobile.errors?.['maxlength'] && (mobile.touched || mobile.dirty)">Mobile number is long.</div>
+           
+          </div>
+          <div class="col ps-3 mb-3">
+            <div class="m-1">Gender</div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                class="form-check-input"
+                value="m"
+                id="Male"
+                formControlName="Gender"
+              />
+              <div class="form-text text-danger" *ngIf="gender.errors?.['required'] && (gender.dirty || gender.touched)">Gender is required.</div>
+              <label class="form-check-label" for="Male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                class="form-check-input"
+                value="f"
+                id="Female"
+                formControlName="Gender"
+              />
+              <label class="form-check-label" for="Male">Female</label>
+            </div>
+          </div>
+        </div>
+       
+        
+        <div class="row">
+          <div class="col mb-3">
+            <label for="Address" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Address"
+              formControlName="Address"
+            />
+            <div class="form-text text-danger" *ngIf="address.errors?.['required'] && (address.dirty || address.touched)">Address is required.</div>
+            <div class="form-text text-danger" *ngIf="address.errors?.['minlength'] && (address.dirty || address.touched)">Address is too short.</div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col input-group mb-3 ">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">State</label>
+          </div>
+          <select class="custom-select form-control" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+     
+        <div class="col input-group mb-3 ">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">City</label>
+          </div>
+          <select class="custom-select form-control" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="Zip" class="form-label">Zip code</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Zip"
+            formControlName="Zip"
+          />
+          <div class="form-text text-danger" *ngIf="zip.errors?.['required'] && (zip.dirty || zip.touched)">Zip Coded is required.</div>
+            <div class="form-text text-danger" *ngIf="zip.errors?.['pattern'] && (zip.touched || zip.dirty)">Zip Coded is invalid.</div>
+            <div class="form-text text-danger" *ngIf="zip.errors?.['minlength'] && (zip.touched || zip.dirty)">Zip Coded is short.</div>
+            <div class="form-text text-danger" *ngIf="zip.errors?.['maxlength'] && (zip.touched || zip.dirty)">Zip Coded is Wrong.</div>
+          </div>
+        </div>
+    
+      
+      <div class="row">
+        <div class="col input-group mb-3 ">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Select Car that You are interested in</label>
+          </div>
+          <select class="custom-select form-control" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Rolls Royce</option>
+            <option value="2">Ferrari</option>
+            <option value="3">Lamborghini</option>
+            <option value="3">Jaguar</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col mb-3 mr-0">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pwd" formControlName="pwd"/>
+            <div class="form-text text-danger" *ngIf="Pwd.errors?.['required'] && (Pwd.dirty || Pwd.touched)">Password is required.</div>
+            <div class="form-text text-danger" *ngIf="Pwd.errors?.['minlength'] || Pwd.errors?.['maxlength'] && (Pwd.touched || Pwd.dirty)">Password should be at least 6 to 15 characters long.</div>
+          </div>
+          <div class="col mb-3 mr-0">
+            <label for="rpwd" class="form-label">Repeat Password</label>
+            <input type="password" class="form-control" id="rpwd" formControlName="rpwd"/>
+            <div class="form-text text-danger" [ngStyle]="{'display': repeatPass}">Repeat password is invalid.</div>
+           
+          </div>
+        </div>
+       
+      </div>
+        <div class="row">
+          <div class="col-6 offset-3">
+            <div class="d-grid">
+              <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+    </form>
+    </div>
+    
+    
+    

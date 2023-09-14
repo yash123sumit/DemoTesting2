@@ -1,0 +1,129 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    // padding-bottom: 3rem;
+    // color: #5a5a5a;
+    background-color: black;
+    overflow-x: hidden;
+    
+    
+  }
+
+  footer {
+    padding: 50px  0;
+  }
+  
+  footer h4 {
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    
+    text-decoration: none;
+  }
+  
+  .bg-dark {
+    background-color: #333;
+    color: #fff;
+    
+  }
+
+  footer .fa-2x {
+    margin-right: 10px;
+  }
+
+  footer .fa-2x:active {
+    color: red;
+  }
+
+
+
+  // footer .fa-2x:hover {
+  //   color: aqua;
+  // }
+
+ .socialIcon img
+{
+    width: 50px;
+    transition: 0.5s;
+}
+  
+.socialIcon a:hover img
+{
+    transform: translateY(-10px);
+}
+  
+
+  
+  
+
+
+
+  
+
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 3px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 0.9em;
+  
+  max-width: 40%;
+  min-width: 40px;
+  padding: 1px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 12px;
+
+  border-radius: 4px;
+
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+
+
+    font-size: 20px;
+    min-width: 120px;
+  }
+}
+  
+
+
+
+
+
