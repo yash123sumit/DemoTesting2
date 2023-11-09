@@ -1,3 +1,4 @@
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator.component';
@@ -51,5 +52,23 @@ describe('CalculatorComponent', () => {
     component.num2 = 5;
     component.divide();
     expect(component.result).toBe(2);
+  });
+
+  it('should calculate the square of a number', () => {
+    component.num1 = 5;
+    component.square();
+    expect(component.result).toBe(25);
+  });
+
+  it('should calculate the cube of a number', () => {
+    component.num1 = 3;
+    component.cube();
+    expect(component.result).toBe(27);
+  });
+
+  it('should calculate the square root of a number', () => {
+    component.num1 = 9;
+    component.squareRoot();
+    expect(component.result).toBe(3);
   });
 });
