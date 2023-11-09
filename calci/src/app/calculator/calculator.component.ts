@@ -1,30 +1,41 @@
 
-        import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
-        @Component({
-          selector: 'app-calculator',
-          templateUrl: './calculator.component.html',
-          styleUrls: ['./calculator.component.css']
-        })
-        export class CalculatorComponent {
-          num1!: number;
-          num2!: number;
-          result!: number;
+@Component({
+  selector: 'app-calculator',
+  templateUrl: './calculator.component.html',
+  styleUrls: ['./calculator.component.css']
+})
+export class CalculatorComponent {
+  num1!: number;
+  num2!: number;
+  result!: number;
 
-          add() {
-            this.result = this.num1 + this.num2;
-          }
+  add() {
+    this.result = this.num1 + this.num2;
+  }
 
-          subtract() {
-            this.result = this.num1 - this.num2;
-          }
+  subtract() {
+    this.result = this.num1 - this.num2;
+  }
 
-          multiply() {
-            this.result = this.num1 * this.num2;
-          }
+  multiply() {
+    this.result = this.num1 * this.num2;
+  }
 
-          divide() {
-            this.result = this.num1 / this.num2;
-          }
-        }
-      
+  divide() {
+    this.result = this.num1 / this.num2;
+  }
+
+  squareRoot() {
+    this.result = Math.sqrt(this.num1);
+  }
+
+  exponential() {
+    this.result = Math.pow(this.num1, this.num2);
+  }
+
+  logarithm() {
+    this.result = Math.log(this.num1);
+  }
+}
